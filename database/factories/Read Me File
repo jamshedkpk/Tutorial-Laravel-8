@@ -1,0 +1,43 @@
+/*
+Factory
+Factories are dummy data entered in database for testing purposes.
+To create a new factory
+php artisan make:factory UserFactory --model=User
+To run a factory
+php artisan tinker
+$students=Student::factory()->count(10)->create();
+it will insert 10 dummy data in User model
+
+To check its complete list go to url
+https://github.com/fzaninotto/Faker#fakerproviderbase
+
+To create a factory of student 
+$student=Student::factory()->count(10)->create();
+Important faker and their name
+name=$this->faker->name();
+date=$this->faker->date();
+time=$this->faker->time();
+datetime=$this->faker->dateTime();
+integer=random_int(1,500);
+title=$this->faker->title();
+titlemale=$this->faker->titleMale();
+titlefemale=$this->faker->titleFemale();
+address=$this->faker->address();
+color=$this->faker->colorName();
+random digits=$this->faker->randomDigit(1,10);
+sentence=$this->faker->sentence();
+word=$this->faker->word();
+paragraph=$this->faker->paragraph();
+state=$this->faker->state();
+city=$this->faker->city();
+country=$this->faker->country();
+postcode=$this->faker->postcode();
+streetaddress=$this->faker->streetAddress();
+phonenumber=$this->faker->phoneNumber();
+email=$this->faker->email();
+email=$this->faker->safeEmail();
+url=$this->faker->url();
+creditcardno=$this->faker->creditCardNumber();
+creditcardtype=$this->faker->creditCardType();
+fileextension=$this->faker->fileExtension();
+*/
